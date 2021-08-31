@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>index</loc>
+  <lastmod>2018-18-8</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>merch</loc>
+   <lastmod>2018-18-8</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>character</loc>
+   <lastmod>2018-18-8</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>power</loc>
+   <lastmod>2018-18-8</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>gallery</loc>
+   <lastmod>2018-18-8</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>author</loc>
+   <lastmod>2018-18-8</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>contact</loc>
+   <lastmod>2018-18-8</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.60</priority>
+</url>
+</urlset>

@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Alegreya', serif;
+}
+
+.cleaner{
+	clear: both;
+}
+
+.omot{
+	margin: 0px auto;
+	width: 1200px;
+	position: relative;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li{
+	display: inline-block;
+	text-align: center;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #ba1f1f;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#slajder,.tekst,.check-out,.omotBlokaCh,.omotGl img,
+#tabela,.omotBy h2{
+	animation: sdesna 1s ;
+}
+
+#zaglavlje,.naslov,.naslovCh,.slika,
+.check-out-line,.omotBy img{
+	animation: sleva 1s ;
+}
+
+/*key-----*/
+
+@keyframes sleva {
+    from {left: -2500px;}
+    to {left: 0px;}
+}
+
+@keyframes sdesna {
+    from {right: -2500px;}
+    to {right: 0px;}
+}
+
+.crnOmot{
+	background-image: url("../img/crno.jpg");
+}
+
+.crvenOmot,.omotAuth{
+	background-image: url("../img/crveno.jpg");
+}
+
+.beliOmot{
+	background-image: url("../img/belo.jpg");
+}
+
+/*----framovi*/
+
+/*ZAGLAVLJE*/
+
+#zaglavlje{
+	width: 100%;
+	height: 80px;
+	box-shadow: 2px 2px 2px #ba1f1f;
+	background-color: #000;
+	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+#logo{
+	width: 10%;
+	float: left;
+	margin-right: 60px;
+}
+
+#meni{
+	float: left;
+	width: 75%;
+}
+
+#meni ul li{
+	margin: 20px 15px;
+	width: 117px;
+	text-align: center;
+}
+
+#meni ul li a{
+	font-size: 19px;
+	letter-spacing: 1px;
+}
+
+#meni ul li.aktivanLink{
+	border: 1px dotted red;
+	padding: 1%;
+}
+
+#meni ul li a:hover{
+	color: #8c131c;
+}
+
+#meni ul li:last-child{
+	margin-right: 0px; 
+}
+
+#zaglavlje form{
+	float: left;
+	margin: 28px 0px 0px 10px;
+}
+
+#zaglavlje form input[type=text] {
+	width: 0.5px;
+    font-size: 16px;
+    background-image: url('../img/search.png');
+    background-position: 10px; 
+    background-repeat: no-repeat;
+    padding: 6px 0px 0px 35px;
+	border: none;
+    transition: width 0.4s ease-in-out;
+}
+
+#zaglavlje form input[type=text]:focus {
+ 	width: 75px;   
+}
+
+/*kraj nav-a*/
+
+/*SLAJDER*/
+
+#slajder{
+	margin-top: 80px;
+	width: 100%;
+	position: relative;
+}
+
+#slajder img{
+	width: 100%;
+}
+
+/*kraj slajder-a*/
+
+/*MAIN*/
+
+#sredina{
+	width: 100%;
+	margin-top: -6px;
+}
+
+.omotSredina{
+	padding: 50px 0px;
+}
+
+.naslov{
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: #ba1f1f;
+	margin: 0px auto;
+	font-size: 25px;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+}
+
+.crniNaslov{
+	color: #000;
+}
+
+.omotBlokaAbout{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0px auto;
+	font-size: 18px;
+	padding: 50px 0px;
+}
+
+.strip{
+	border: 5px solid #000;
+}
+
+.tekst{
+	width: 500px;
+	line-height: 1.6;
+	text-align: justify;
+	position: relative;
+}
+
+.manji{
+	width: 400px;
+	line-height: 1.4;
+	font-size: 20px;
+}
+
+.slika{
+	position: relative;
+}
+
+.manja{
+	margin-left: 100px;
+}
+
+.spaner{
+	text-transform: uppercase;
+	color: #ba1f1f;
+	font-size: 23px;
+	word-spacing: 5px;
+}
+
+/*tri dugmeta*/
+
+.check-out{
+	width: 100%;
+	height: 70px;
+	background-color: #000;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+}
+
+.check-out h2{
+	padding-top: 15px;
+	height: 55px;
+}
+
+.check-out ul{
+	position: relative;
+}
+
+.check-out ul li{
+	margin: 20px 70px;
+	width: 250px;
+}
+
+.check-out ul li a:hover{
+	color: #8c131c;
+}	
+
+.check-out .spaner{
+	font-family: 'Sedgwick Ave', cursive;
+}
+
+/*kraj main-a*/
+
+/*FOOTER*/
+
+#futer{
+	width: 100%;
+	background-color: #000;
+	box-shadow: -2px -2px 2px #ba1f1f;
+}
+
+#social{
+	width: 65%;
+	margin: 0px auto;
+	padding-top: 10px;
+	float: left;
+}
+
+#social ul li{
+	width: 100px;
+	margin: 30px 10px;
+}
+
+#social ul li a{
+	font-size: 30px;
+}
+
+#social ul li a:hover{
+	font-size: 31px;
+	color: #8c131c;
+}
+
+#ispodSocial{
+	width: 30%;
+	margin: 0px auto;
+	margin-top: 40px;
+	color: #ba1f1f;
+	font-size: 27px;
+	text-align: center;
+	float: right;
+	border-left: 1px solid #ba1f1f;
+}
+
+/*kraj footer-a*/
+
+/*CHARACTERandPOWER PAGE*/
+
+/*MAIN*/
+
+.omotBlokaCh{
+	margin: 0px auto;
+	width: 500px;
+	position: relative;
+	line-height: 1.6;
+	text-align: justify;
+	font-size: 20px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.slikaStripa{
+	margin: 0px auto;
+	width: 500px;
+	padding: 20px 0px;
+}
+
+/*kraj CHandPW page-a*/
+
+/*GALLERY*/
+
+/*sredina*/
+
+#sredina1{
+	margin: 0px auto;
+	width: 100%;
+}
+
+.omotGl{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 100px 25px;
+	padding-bottom: 50px;
+	margin: 0px auto;
+	font-size: 18px;
+}
+
+.omotGl p{
+	opacity: 0.5;
+	text-align: center;
+	margin-top: 50px;
+	position: relative;
+	font-size: 30px;
+}
+
+.omotGl p:hover {
+	opacity: 1;
+}
+
+.omotGl figure{
+	border: 5px solid #000;
+	margin: 20px 0px;
+}
+
+.omotGl img{
+	opacity: 0.5;
+	vertical-align: middle;
+	position: relative;
+}
+
+
+.omotGl img:hover {
+	opacity: 1;
+	transform: scale(1.1,1.1);
+}
+
+/*oko centra slike*/
+
+.pozadina{
+	position: fixed;
+	top: 0px;
+	width: 20%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+}
+
+.levo{
+	left: 0px;
+	top: 100px;
+	background-image: url("../img/pointilevo.jpg");
+}
+
+.desno{
+	right: 0px;
+	top: 100px;
+	background-image: url("../img/pointidesno.jpg");
+}
+
+/*CONTACT PAGE*/
+
+.omotCon{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px auto;
+	font-size: 18px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+#tabela{
+	width: 600px;
+	height: 350px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 25px;
+	position: relative;
+}
+
+#tabela caption{
+	font-size: 30px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: #000;
+	margin-top: 130px;
+	margin-bottom: 10px;
+}
+
+#tabela span{
+	font-size: 15px;
+}
+
+.tekst-polje{
+	width:250px;
+	height:30px;
+	padding: 10px 15px;
+	color: #ba1f1f;
+	text-align: center;
+	font-size: 14px;
+}
+
+input,textarea{
+	background-color: #000;
+	color: #ba1f1f;
+	border-radius: 10px;
+}
+
+.dugme{
+	width:100px;
+	height:32px;
+	font-size: 17px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dugme:hover{
+	color: #8c131c;
+}
+
+::placeholder{
+	color: #ba1f1f;
+}
+
+/*MERCH PAGE*/
+
+.omotBy {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 150px 25px;
+	padding-bottom: 80px;
+	margin: 0px auto;
+	font-size: 18px;
+}
+
+.omotBy h1{
+	opacity: 0.5;
+	text-align: center;
+	margin-bottom: 50px;
+	position:relative;
+}
+
+.omotBy h1:hover {
+	opacity: 1;
+}
+
+.omotBy img{
+	border: 5px solid #000;
+	position:relative;
+}
+
+/*AUTHOR PAGE*/
+
+.omotAuth,.omotBlokaAuthor{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 18px;
+}
+
+.omotBlokaAuthor{
+	width: 100%;
+	justify-content: space-around;
+}
+
+.omotAuth{
+	width: 60%;
+	justify-content: center;
+	padding: 100px 30px;
+	padding-bottom: 50px;
+	margin: 0px auto;
+	background-size: cover;
+}
